@@ -3,6 +3,24 @@ In times of natural disasters (floods, earthquakes, wildfires, etc.), quick acce
  Key Features:
 Real-Time Crisis Assistant (via Gemini API):
 
+disaster-response-buddy/
+│
+├── app/
+│   ├── main.py                # Streamlit app
+│   ├── gemini_utils.py        # Gemini API wrappers
+│   ├── vertex_intent_model.py # Intent classification model
+│   └── image_analysis.py      # Optional image model handler
+│
+├── models/
+│   └── disaster_intents.pkl   # Trained custom model (Vertex)
+│
+├── requirements.txt           # Python dependencies
+├── .streamlit/config.toml     # UI configs
+├── README.md                  # Project description
+└── assets/
+    └── demo_screenshots/
+
+
 Users ask questions like:
 
 “What should I do during an earthquake?”
